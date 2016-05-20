@@ -34,7 +34,7 @@ body {
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 850px;
   }
 }
 .container-narrow > hr {
@@ -45,10 +45,30 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
+  background: asset-url('rails.jpg') center center;
+  background-size: cover;
+  min-height: 550px;
+  overflow: hidden;
 }
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
+}
+
+.jumbotron h1 {
+  color: #fff !important;
+  // margin-top: 1em;
+}
+
+.btn-signup {
+  margin-top: 12em;
+  color: #fff;
+  background-color: #2c2c2c;
+  &:hover {
+    color: #fff !important;
+    background-color: #A22A32;
+    border: #2c2c2c solid 2px;
+  }
 }
 
 /* Supporting marketing content */
